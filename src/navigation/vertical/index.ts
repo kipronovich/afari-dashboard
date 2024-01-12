@@ -12,6 +12,23 @@ import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
 
 // ** Type import
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
+import {
+  AccountSettings,
+  ApplicationSettings,
+  BookSettings,
+  BriefcaseAccount,
+  ChartBarStacked,
+  CogOffOutline,
+  CogOutline,
+  EyeSettingsOutline,
+  Finance,
+  NewBox,
+  PhoneSettingsOutline,
+  PlusNetwork,
+  SettingsHelper,
+  StarSettingsOutline,
+  ViewListOutline
+} from 'mdi-material-ui'
 
 const navigation = (): VerticalNavItemsType => {
   return [
@@ -26,53 +43,66 @@ const navigation = (): VerticalNavItemsType => {
       path: '/account-settings'
     },
     {
-      sectionTitle: 'Pages'
-    },
-    {
-      title: 'Login',
-      icon: Login,
-      path: '/pages/login',
-      openInNewTab: true
+      sectionTitle: 'Members'
     },
     {
       title: 'Register',
       icon: AccountPlusOutline,
-      path: '/pages/register',
-      openInNewTab: true
+      path: '/new-member',
+      openInNewTab: false
     },
     {
-      title: 'Error',
-      icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
+      title: 'Assessments',
+      icon: EyeSettingsOutline,
+      path: '/assessment',
+      openInNewTab: false
     },
     {
-      sectionTitle: 'User Interface'
+      title: 'Reports',
+      icon: ViewListOutline,
+      path: '/members',
+      openInNewTab: false
     },
     {
-      title: 'Typography',
-      icon: FormatLetterCase,
+      title: 'Settings',
+      icon: AccountSettings,
+      path: '/settings'
+    },
+    {
+      sectionTitle: 'Loans'
+    },
+    {
+      title: 'New Loan',
+      icon: NewBox,
       path: '/typography'
     },
     {
-      title: 'Icons',
+      title: 'View Loans',
       path: '/icons',
-      icon: GoogleCirclesExtended
+      icon:  ChartBarStacked
     },
     {
-      title: 'Cards',
-      icon: CreditCardOutline,
+      title: 'Settings',
+      icon: BookSettings,
       path: '/cards'
     },
     {
-      title: 'Tables',
-      icon: Table,
-      path: '/tables'
+      sectionTitle: 'User Managment'
     },
     {
-      icon: CubeOutline,
-      title: 'Form Layouts',
-      path: '/form-layouts'
+      title: 'Admin',
+      icon: BriefcaseAccount,
+      path: '/admin'
+    },
+    {
+      title: 'Roles',
+      path: '/roles',
+      icon: GoogleCirclesExtended
+    },
+    {
+      title: 'Settings',
+      icon: CogOutline,
+      path: '/cards'
     }
   ]
 }
